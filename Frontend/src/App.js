@@ -9,12 +9,15 @@ import './App.css';
 // import FuncaoA from './components/Contexto_06.jsx/FuncaoA';
 // import SaveData from './components/Storage_07/FunctionLocalStorage';
 // import Pai from './components/PaiFilho_10/Pai'
-import FunctionEstados from './components/Estados_10/FunctionEstados';
+// import FunctionEstados from './components/Estados_09/FunctionEstados';
+import PokemonAxios from './components/Axios_10/PokemonAxios.jsx';
 
 function App() {
   return (
     <div className='App'>
-      <FunctionEstados></FunctionEstados>
+      <PokemonAxios></PokemonAxios>
+
+      {/* <FunctionEstados></FunctionEstados> */}
 
       {/* <Pai></Pai> */}
       {/* <SaveData></SaveData> */}
