@@ -6,12 +6,20 @@ import './App.css';
 // import { Header, Body, Footer } from './components/MultiplosComponentes_04';
 // import  * as Site  from './components/MultiplosComponentes_04';
 // import {Supermercado, Legume, Fruta, Bebida} from './components/Children_05';
-import FuncaoA from './components/Contexto_06.jsx/FuncaoA';
+// import FuncaoA from './components/Contexto_06.jsx/FuncaoA';
+// import SaveData from './components/Storage_07/FunctionLocalStorage';
+// import Pai from './components/PaiFilho_10/Pai'
+import FunctionEstados from './components/Estados_10/FunctionEstados';
 
 function App() {
   return (
     <div className='App'>
-      <FuncaoA/>
+      <FunctionEstados></FunctionEstados>
+
+      {/* <Pai></Pai> */}
+      {/* <SaveData></SaveData> */}
+
+      {/* <FuncaoA/> */}
 
       {/* <Supermercado nome="DuPovu">
         <Fruta nome="Banana"></Fruta>
