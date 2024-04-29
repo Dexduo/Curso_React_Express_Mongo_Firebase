@@ -10,12 +10,15 @@ import './App.css';
 // import SaveData from './components/Storage_07/FunctionLocalStorage';
 // import Pai from './components/PaiFilho_10/Pai'
 // import FunctionEstados from './components/Estados_09/FunctionEstados';
-import PokemonAxios from './components/Axios_10/PokemonAxios.jsx';
+// import PokemonAxios from './components/Axios_10/PokemonAxios.jsx';
+import TelaPrincipal from './components/Redux_11/v1/TelaPrincipal';
 
 function App() {
   return (
     <div className='App'>
-      <PokemonAxios></PokemonAxios>
+      <TelaPrincipal></TelaPrincipal>
+
+      {/* <PokemonAxios></PokemonAxios> */}
 
       {/* <FunctionEstados></FunctionEstados> */}
 
