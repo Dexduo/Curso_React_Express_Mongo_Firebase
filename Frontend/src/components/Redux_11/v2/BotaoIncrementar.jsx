@@ -1,8 +1,14 @@
-const BotaoIncrementar = ({incrementar}) =>{
+import { useDispatch } from 'react-redux'
+import { incrementar } from './slices/idSlice'
+
+const BotaoIncrementar = () =>{
+    
+    const dispatch = useDispatch()
+
     return(
 
         <>
-            <button onClick={incrementar}>
+            <button onClick={() => dispatch(incrementar())}>
                 ID + 1
             </button>
         </>

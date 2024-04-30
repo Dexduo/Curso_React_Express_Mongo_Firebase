@@ -1,19 +1,46 @@
 import Imagem from "./Imagem"
 import BotaoIncrementar from "./BotaoIncrementar"
 import BotaoDecrementar from "./BotaoDecrementar"
-import {useState} from 'react'
+import BotaoDecrementarValor from "./BotaoDecrementarValor"
+import BotaoIncrementarValor from "./BotaoIncrementarValor"
+import { useSelector } from "react-redux"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 const TelaPrincipal = () =>{
 
-    const [id, setId] = useState(150)
+    const [nome, setNome] = useState("")
+    const [imagem, setImagem] = useState("")
+    const [loading, setLoading] = useState(false)
 
-    const incrementar = () => {
-        setId((prev) => prev + 1)
+    const id = useSelector(
+        (state) => state.id.value
+    ) 
+
+    const renderizarImagem = () => {
+        if(loading) return(
+            <h3>Carregando...</h3>
+        )
+        return (
+            <Imagem nome={nome} imagem={imagem}></Imagem>
+        )
     }
 
-    const decrementar = () => {
-        setId((prev) => prev - 1)
-    }
+    useEffect(
+        () => {
+            setLoading(true)
+            axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
+            .then(
+                (response) => {
+                    setNome(response.data.name)
+                    setImagem(response.data.sprites.front_default)
+                    setLoading(false)
+                }
+            )
+            .catch(error => {console.log(error); setLoading(false)} )
+        },
+        [id]
+    )
 
     return(
 
@@ -22,15 +49,17 @@ const TelaPrincipal = () =>{
                 <tbody>
                     <tr>
                         <td>
-                            <Imagem id={id}></Imagem>
+                            {renderizarImagem()}
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <BotaoDecrementar decrementar={decrementar}></BotaoDecrementar>
+                            <BotaoDecrementarValor ></BotaoDecrementarValor>
+                            <BotaoDecrementar ></BotaoDecrementar>
                         </td>
                         <td>
-                            <BotaoIncrementar incrementar={incrementar}></BotaoIncrementar>
+                            <BotaoIncrementar ></BotaoIncrementar>
+                            <BotaoIncrementarValor ></BotaoIncrementarValor>
                         </td>
                     </tr>
                 </tbody>

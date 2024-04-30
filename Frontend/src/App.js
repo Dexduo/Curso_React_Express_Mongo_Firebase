@@ -11,12 +11,14 @@ import './App.css';
 // import Pai from './components/PaiFilho_10/Pai'
 // import FunctionEstados from './components/Estados_09/FunctionEstados';
 // import PokemonAxios from './components/Axios_10/PokemonAxios.jsx';
-import TelaPrincipal from './components/Redux_11/v1/TelaPrincipal';
+// import TelaPrincipal from './components/Redux_11/v2/TelaPrincipal';
+import MeuIndex from './components/Redux_11/v2/MeuIndex';
 
 function App() {
   return (
     <div className='App'>
-      <TelaPrincipal></TelaPrincipal>
+      <MeuIndex></MeuIndex>
+      {/* <TelaPrincipal></TelaPrincipal> */}
 
       {/* <PokemonAxios></PokemonAxios> */}
 

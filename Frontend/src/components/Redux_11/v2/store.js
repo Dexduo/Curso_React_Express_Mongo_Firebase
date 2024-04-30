@@ -1,9 +1,10 @@
-import { configureStore } from 'react-redux'
+import { configureStore } from "@reduxjs/toolkit"
+import  idReducer from './slices/idSlice'
 
-const store = configureStore(
+export const store = configureStore(
     {
         reducer: {
-
+            id: idReducer
         }
     }
 )
