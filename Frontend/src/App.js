@@ -12,38 +12,49 @@ import './App.css';
 // import FunctionEstados from './components/Estados_09/FunctionEstados';
 // import PokemonAxios from './components/Axios_10/PokemonAxios.jsx';
 // import TelaPrincipal from './components/Redux_11/v2/TelaPrincipal';
-import MeuIndex from './components/Redux_11/v2/MeuIndex';
+// import MeuIndex from './components/Redux_11/v2/MeuIndex';
+import MinhaPromise from './components/Promises_12/MinhaPromise';
+import MeuAsync from './components/Promises_12/MeuAsync';
 
-function App() {
+function App(){
   return (
     <div className='App'>
-      <MeuIndex></MeuIndex>
-      {/* <TelaPrincipal></TelaPrincipal> */}
-
-      {/* <PokemonAxios></PokemonAxios> */}
-
-      {/* <FunctionEstados></FunctionEstados> */}
-
-      {/* <Pai></Pai> */}
-      {/* <SaveData></SaveData> */}
-
-      {/* <FuncaoA/> */}
-
-      {/* <Supermercado nome="DuPovu">
-        <Fruta nome="Banana"></Fruta>
-        <Legume nome="Batata"></Legume>
-        <Bebida nome="Suco de Uva"></Bebida>
-      </Supermercado> */}
-      {/*<HelloWorld></HelloWorld>*/}
-      {/* {<Calculadora></Calculadora>} */}
-      {/* <MyProps nome="José Eduardo Nogueira" idade={18} curso="Ciência da Computação"></MyProps>
-      <FunctionA numeroX={100}></FunctionA> */}
-      {/* <Header></Header>
-      <Body></Body>
-      <Footer></Footer>
-      <Site.Header></Site.Header> */}
+      <MeuAsync/>
+      {/* <MinhaPromise/> */}
     </div>
-  );
+  )
 }
+
+// function App() {
+//   return (
+//     <div className='App'>
+//       {/*<MeuIndex></MeuIndex>*/}
+//       {/* <TelaPrincipal></TelaPrincipal> */}
+
+//       {/* <PokemonAxios></PokemonAxios> */}
+
+//       {/* <FunctionEstados></FunctionEstados> */}
+
+//       {/* <Pai></Pai> */}
+//       {/* <SaveData></SaveData> */}
+
+//       {/* <FuncaoA/> */}
+
+//       {/* <Supermercado nome="DuPovu">
+//         <Fruta nome="Banana"></Fruta>
+//         <Legume nome="Batata"></Legume>
+//         <Bebida nome="Suco de Uva"></Bebida>
+//       </Supermercado> */}
+//       {/*<HelloWorld></HelloWorld>*/}
+//       {/* {<Calculadora></Calculadora>} */}
+//       {/* <MyProps nome="José Eduardo Nogueira" idade={18} curso="Ciência da Computação"></MyProps>
+//       <FunctionA numeroX={100}></FunctionA> */}
+//       {/* <Header></Header>
+//       <Body></Body>
+//       <Footer></Footer>
+//       <Site.Header></Site.Header> */}
+//     </div>
+//   );
+// }
 
 export default App;
