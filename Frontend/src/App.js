@@ -13,13 +13,17 @@ import './App.css';
 // import PokemonAxios from './components/Axios_10/PokemonAxios.jsx';
 // import TelaPrincipal from './components/Redux_11/v2/TelaPrincipal';
 // import MeuIndex from './components/Redux_11/v2/MeuIndex';
-import MinhaPromise from './components/Promises_12/MinhaPromise';
-import MeuAsync from './components/Promises_12/MeuAsync';
+// import MinhaPromise from './components/Promises_12/MinhaPromise';
+// import MeuAsync from './components/Promises_12/MeuAsync';
+// import Test from './components/Refs_13/Test';
+import MyRefs from './components/Refs_13/MyRefs';
 
 function App(){
   return (
     <div className='App'>
-      <MeuAsync/>
+      <MyRefs />
+      {/* <Test/> */}
+      {/* <MeuAsync/> */}
       {/* <MinhaPromise/> */}
     </div>
   )
